@@ -385,7 +385,6 @@ a:active {
 }
 .nav-previous,
 .nav-next {
-	padding: 15px;
 	background-color: #fff;
 	border: 1px solid #e8e8e8;
 	-webkit-transition: background-color 0.3s;
@@ -409,6 +408,8 @@ a:active {
 	text-decoration: none;
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
+	padding: 15px;
+	display: inline-block;
 }
 .nav-previous:hover,
 .nav-next:hover {
@@ -494,7 +495,7 @@ a:active {
 
 /* Search widget. */
 .widget_search .search-submit {
-	display: none;
+	float: right;
 }
 .widget ul {
 	padding: 0 0 0 20px;
@@ -551,6 +552,12 @@ a:active {
 	display: inline-block;
 	margin-bottom: 8px;
 	margin-right: 4px;
+	display: inline-block;
+}
+.tagcloud a:hover {
+	background-color: #bababa;
+	color:#15191B !important;
+	text-decoration: none;
 }
 
 /*--------------------------------------------------------------
@@ -1293,7 +1300,7 @@ Slider
 	color: #ef997f;
 }
 .footer-widgets,
-.footer-widgets a {
+.footer-widgets .widget a {
 	color: #bababa;
 }
 /* 404 */

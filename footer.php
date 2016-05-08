@@ -17,7 +17,8 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info container">
-			<?php do_action('oria_footer'); ?>
+			&copy; 2016 Romsey Methodist Circuit
+			<?php #do_action('oria_footer'); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
