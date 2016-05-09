@@ -36,11 +36,11 @@
 	<footer class="entry-footer">
 		<?php oria_entry_footer(); ?>
 
-		<!--<div class="author-bio">
+		<div class="author-bio">
 			<?php echo get_avatar( get_the_author_meta('email'), '90' ); ?>
-			<h3 class="author-title">Written by <?php the_author_link(); ?></h3>
+			<h3 class="author-title">About <?php the_author_link(); ?></h3>
 			<p class="author-description"><?php the_author_meta('description'); ?></p>
-	  </div>-->
+		</div>
 
 	</footer><!-- .entry-footer -->
 	<?php endif; ?>
