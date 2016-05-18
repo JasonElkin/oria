@@ -633,14 +633,14 @@ a:active {
 	padding: 0 5px 5px;
 	text-align: center;
 }
-.entry-data,
+/*.entry-data,
 .entry-data a,
 .entry-footer,
 .entry-footer a,
 .entry-meta,
 .entry-meta a {
 	color: #B5BBC5;
-}
+}*/
 .entry-data,
 .entry-meta,
 .entry-footer
@@ -650,7 +650,6 @@ a:active {
 .entry-data,
 .entry-footer {
 	clear: both;
-	text-align: center;
 }
 .edit-link {
 	margin-left: 5px;
@@ -671,6 +670,7 @@ a:active {
 	color: #fff;
 	text-decoration: none;
 }
+/*
 .single .tags-links::before,
 .single .edit-link::before,
 .single .byline::before,
@@ -680,6 +680,21 @@ a:active {
 }
 .single .cat-links::before {
 	content: '';
+}*/
+
+.single .entry-footer span {
+	display: block;
+}
+
+.single .cat-links::before {
+	font-family: Fontawesome;
+	content: "\f115";
+	margin-right: 5px;
+}
+.single .tags-links::before {
+	font-family: Fontawesome;
+	content: "\f02c";
+	margin-right: 5px;
 }
 /*--------------------------------------------------------------
 ## Asides
@@ -1288,6 +1303,37 @@ Slider
 	border: 1px solid #e8e8e8;
 }
 
+/* Author Bio */
+
+.author-bio {
+    text-align: left;
+    color: #1c1c1c;
+    font-size: 0.9em;
+	padding:20px;
+    margin: 20px 0 0 0;
+	border: 1px solid #e8e8e8;
+}
+
+.author-bio img {
+    float: left;
+    margin: 0 20px 10px 0;
+}
+.author-bio h3 {
+	margin-top:0;
+}
+.author-archive .archive-header {
+	max-width: 800px;
+}
+.author-archive .archive-header h1{
+	text-align: left;
+}
+.author-archive .archive-header img {
+	float: left;
+	margin: 10px 20px 10px 10px;
+}
+.author-archive .author-description {
+	text-align: left;
+}
 /* Footer widgets */
 .footer-widgets {
 	background-color: #15191B;
@@ -1304,10 +1350,10 @@ Slider
 	color: #bababa;
 }
 /* 404 */
-.error404 .content-area {
+.error404 .content-area, .no-results.not-found {
 	text-align: center;
 }
-.error404 .widget_recent_entries ul {
+.error404 .widget_recent_entries ul, .no-results.not-found .widget_recent_entries ul{
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -1476,4 +1522,13 @@ Slider
 	.owl-carousel .owl-item {
 		padding: 0;
 	}
+}
+
+/* Jetpack Plugin overrides */
+
+.sd-title {
+	display: none !important;
+}
+.sd-content {
+	padding: 10px 0;
 }

@@ -42,7 +42,7 @@
 
 			<?php if ( is_active_sidebar( 'sidebar-1' ) && !is_singular() ) : ?>
 			<div class="sidebar-toggle">
-				<i class="fa fa-menu"></i>
+				<i class="fa fa-bars"></i>
 			</div>
 			<?php endif; ?>
 		</div>

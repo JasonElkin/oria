@@ -38,11 +38,11 @@ jQuery(function($) {
 	$('.sidebar-toggle').click(function() {
 		$('.widget-area').toggleClass('widget-area-visible');
 		$('.sidebar-toggle').toggleClass('sidebar-toggled');
-		$('.sidebar-toggle').find('i').toggleClass('fa-menu fa-times');
+		$('.sidebar-toggle').find('i').toggleClass('fa-bars fa-times');
 	});
 	$('.sidebar-close').click(function() {
 		$('.widget-area').toggleClass('widget-area-visible');
-		$('.sidebar-toggle').find('i').toggleClass('fa-menu fa-times');
+		$('.sidebar-toggle').find('i').toggleClass('fa-bars fa-times');
 	});
 });
 
