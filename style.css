@@ -651,6 +651,11 @@ a:active {
 .entry-footer {
 	clear: both;
 }
+
+.home .entry-data {
+	text-align: center;
+}
+
 .edit-link {
 	margin-left: 5px;
 }
