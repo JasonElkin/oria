@@ -651,6 +651,18 @@ a:active {
 .entry-footer {
 	clear: both;
 }
+
+.home .entry-data {
+	text-align: center;
+}
+.home .entry-data span {
+	display: inline-block;
+	margin-right: 5px;
+}
+.home .entry-data span:last-child{
+	margin-right: 0;
+}
+
 .edit-link {
 	margin-left: 5px;
 }

@@ -89,10 +89,10 @@ function oria_posted_on() {
 
 	$byline = sprintf(
 		esc_html_x( '%s', 'post author', 'oria' ),
-		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
+		'<span class="author vcard"><i class="fa fa-user" aria-hidden="true"></i> <a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 
-	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>';
+	echo '<span class="posted-on"><i class="fa fa-calendar" aria-hidden="true"></i> ' . $posted_on . '</span> <span class="byline"> ' . $byline . '</span>';
 
 }
 endif;
@@ -102,11 +102,11 @@ endif;
  * Index post data
  */
 if ( ! function_exists( 'oria_index_data' ) ) :
-function oria_index_data() {	
+function oria_index_data() {
 	oria_posted_on();
 	$categories_list = get_the_category_list( esc_html__( ', ', 'oria' ) );
 	if ( $categories_list ) {
-		echo '<span class="cat-links">' . $categories_list . '</span>';
+		echo '<span class="cat-links"><i class="fa fa-folder-open-o" aria-hidden="true"></i> ' . $categories_list . '</span>';
 	}
 }
 
@@ -198,7 +198,7 @@ function the_archive_title( $before = '', $after = '' ) {
 	$title = apply_filters( 'get_the_archive_title', $title );
 
 	if ( ! empty( $title ) ) {
-		echo $before . $title . $after; 
+		echo $before . $title . $after;
 	}
 }
 endif;
@@ -225,7 +225,7 @@ function the_archive_description( $before = '', $after = '' ) {
 		 *
 		 * @param string $description Archive description to be displayed.
 		 */
-		echo $before . $description . $after; 
+		echo $before . $description . $after;
 	}
 }
 endif;
